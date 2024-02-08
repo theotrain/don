@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Montserrat:wght@500;700;800&display=swap');
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, img, ol, ul, li,
+fieldset, form, label, article, aside, 
+figure, figcaption, footer, header,
+menu, nav, output, section, summary,
+time, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.cc {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  --blue: #539ae3;
+  --dk-blue: #1d3a94; 
+  --dark: #1a1a1a;
+  --red: #dd4231;
+  --newspaper: #e0e0e0;
+  color: var(--dark);
+}
+#banner {
+  height: 550px;
+  width: 100%;
+  background-color: var(--blue);
+  background-image: url("https://static.wixstatic.com/media/8441cf_97e0dd5274d6458c90489837215a0400~mv2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#content {
+  position: relative;
+  top: -75px;
+  padding: 20px 40px;
+  max-width: 945px;
+  /* width: 95%; */
+  background-color: white;
+  font-weight: 500;
+}
+.headline {
+  /* display: block; */
+  /* background-color: yellow; */
+  font-size: 3.2em;
+  font-weight: 800;
+  color: var(--blue)
+}
+.headline a {
+  color: var(--dk-blue);
+}
+.summary {
+  /* font-size: 18px; */
+  margin-top: 16px;
+  margin-bottom: 42px;
+  line-height: 1.5em;
+}
+.summary p + p {
+  margin-top: 20px;
+}
+/* .summary p:nth-last-child(1) {
+  font-size: 22px;
+} */
+.summary p.large {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+.action {
+  /* display: flex; */
+  display:inline-block;
+  background-color: var(--red);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 10px 24px;
+  /* width: 200px; */
+  justify-content: center;
+  margin: auto;
+}
+.news {
+  margin-top: 48px;
+}
+.newspaper + .newspaper {
+  margin-top: 32px;
+}
+.news-logo {
+  background-color: #ddd;
+  height: 77px;
+  width: 140px;
+  position: relative;
+  top: 18px;
+  left: 2.2rem;
+}
+.news-content {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2em;
+  background-color: var(--newspaper);
+  padding: 2.2rem 3rem 2.2rem 2rem;
+}
+.news-tear {
+  position: relative;
+  top: -1px;
+  width: 100%;
+  height: 20px;
+  background-image: url("https://static.wixstatic.com/media/8441cf_67d3d599b7a64546beffafcc8f5e9187~mv2.png");
+  /* background-color: red; */
+  background-size: auto 20px;
+}
+.guardian-logo {
+  background-image: url("https://static.wixstatic.com/media/8441cf_acf51e1b628a4005b79ab13edf8b2a4a~mv2.jpg");
+  background-size: cover;
+}
+.amnesty-logo {
+  background-image: url("https://static.wixstatic.com/media/8441cf_af8fca635ff24757bcdae30ea61bbf69~mv2.jpg");
+  background-size: cover;
+}
+.vice-logo {
+  background-image: url("https://static.wixstatic.com/media/8441cf_2578d2a4b98640c3841c272c58d5e457~mv2.jpg");
+  background-size: cover;
+}
+.newspaper .ratio {
+  display:block;
+  width:100%;
+  height:auto;
+}
+.newspaper iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.iframe-container {
+  position: relative;
+  margin-top: 22px;
+}
+
+
+@media screen and (min-width: 1600px) {
+  #banner {
+    width: 1600px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .headline {
+    font-size: 2.8em;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .cc {
+    font-size: 17px;
+  }
+  .headline {
+    font-size: 2.6em;
+  }
+  #banner {
+    height: 300px;
+  }
+  #content {
+    padding: 20px 30px;
+    top: 0px;
+  }
+  .news-logo {
+    height: 67.375px;
+    width: 122.5px;
+    left: 1.4rem;
+  }
+  .news-content {
+    padding: 1.8rem 1.4rem 1.4rem 1.4rem;
+    font-size: 1.9em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cc {
+    font-size: 15px;
+  }
+  .headline {
+    font-size: 2.3em;
+  }
+  #banner {
+    height: 230px;
+  }
+  #content {
+    padding: 20px 20px;
+    top: 0px;
+  }
+  .news-logo {
+    height: 57.75px;
+    width: 105px;
+    left: 1.2rem;
+  }
+  .news-content {
+    padding: 1.8rem 1.2rem 1.2rem 1.2rem;
+    font-size: 1.7em;
+  }
+}
